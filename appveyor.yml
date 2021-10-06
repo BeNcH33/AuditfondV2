@@ -4,13 +4,13 @@ version: '1.0.{build}'
 #  file: '**\*.csproj'
 dotnet_csproj:
   patch: true
-  file: 'AuditFondLab1.csproj'
+  file: 'AuditfondV2.csproj'
   version: 5.0.3
   package_version: '{version}'
   assembly_version: '{version}'
   file_version: '{version}'
   informational_version: '{version}'
 build:
-  project: AuditFondLab1.sln
+  project: AuditfondV2.sln
 before_build:
   - nuget restore
